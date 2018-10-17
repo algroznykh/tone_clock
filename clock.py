@@ -45,12 +45,12 @@ def main():
         if datetime.now().second == 0:
             schedule.every().minute.do(gen_tone)
             break
-	while True:
-		schedule.run_pending()
-		time.sleep(1)
-		print(datetime.now())
+    while True:
+        schedule.run_pending()
+        time.sleep(1)
+        print(datetime.now())
 
 
 if __name__ == '__main__':
-	main()
+    main()
 
